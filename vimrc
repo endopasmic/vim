@@ -13,6 +13,8 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'unite.vim'
 Plugin 'snipmate.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'tomtom/tcomment_vim'
+Plugin 'kien/ctrlp.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -28,6 +30,16 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+""""""""""""""""""""""""""""""
+" 自動的に閉じ括弧を入力
+""""""""""""""""""""""""""""""
+imap { {}<LEFT>
+imap [ []<LEFT>
+imap ( ()<LEFT>
+imap < <><LEFT>
+imap ' ''<LEFT>
+imap " ""<LEFT>
+""""""""""""""""""""""""""""""
 
 " Configuration file for vim
 set modelines=0		" CVE-2007-2438
@@ -38,7 +50,9 @@ set backspace=2		" more powerful backspacing
 set lines=80 columns=100
 set guifont=Menlo\ Regular:h14
 " Set the transparent of BG
-set transparency=15 
+set transparency=15
+"show line number
+set number
 colorscheme monokai
 au FileType xhtml,xml,php,ctp so ~/.vim/ftplugin/html_autoclosetag.vim 
 " Don't write backup file if vim is being called by "crontab -e"
