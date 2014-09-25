@@ -1,0 +1,3 @@
+[submodule "endopasmic/vim"]
+	path = endopasmic/vim
+	url = https://github.com/endopasmic/vim.git
