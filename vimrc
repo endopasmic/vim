@@ -47,10 +47,10 @@ set modelines=0		" CVE-2007-2438
 " Normally we use vim-extensions. If you want true vi-compatibility
 " remove change the following statements
 set backspace=2		" more powerful backspacing
-set lines=80 columns=100
+set lines=80 columns=120
 set guifont=Menlo\ Regular:h14
 " Set the transparent of BG
-set transparency=15
+set transparency=10
 "show line number
 set number
 colorscheme monokai
